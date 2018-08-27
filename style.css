@@ -1,0 +1,137 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* -------------- MAIN RULES ------------- */
+.image {
+    position	: relative;
+    width		: 100%; /* for IE 6 */
+}
+
+
+h2 {
+    position	: absolute;
+    top		: 23px;
+    left		: 3px;
+    width		: 100%;
+}
+
+.calc_head {
+    font: 700 20px/0 Arial, sans-serif;
+    height: 20px;
+    width: 100%;
+
+}
+
+.digit_q {
+    margin: 0 0 7px;
+    width: 80px;
+    height: 25px;
+    border: 0px solid darkslateblue;
+    padding: 4px 5px;
+    text-align: left;
+    font: 700 14px/1 Arial, sans-serif;
+    color: black;
+    background-color: aqua;
+}
+
+.button_eq {
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    transition: all .2s;
+    text-transform: uppercase;
+
+}
+.out_pole_text {
+    margin: 0 0 7px;
+    width: 90px;
+    height: 0px;
+    border: 0px solid darkslateblue;
+    padding: 4px 2px;
+    text-align: center;
+    font: 700 16px/1 Arial, sans-serif;
+    color: black;
+    background-color: space-between;
+}
+
+.out_pole {
+    margin: 0 0 20px;
+    width: 90px;
+    height: 27px;
+    border: 0px solid darkslateblue;
+    padding: 4px 2px;
+    text-align: center;
+    font: 700 14px/1 Arial, sans-serif;
+    color: black;
+    background-color: bisque;
+}
+
+
+.calculator {
+    width: 350px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: yellowgreen;
+    box-shadow: 0 0 30px grey;
+    border-radius: 4px;
+}
+
+.calculator__form {
+    height: 100%;
+    padding: 20px;
+}
+
+.calculator__row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.calculator__row button{
+    color: #000;
+}
+.calculator__display {
+    margin: 0 0 0px;
+    width: 60%;
+    border: 1px solid darkslateblue;
+    padding: 4px 2px;
+    text-align: right;
+    font: 700 16px/1 Arial, sans-serif;
+    color: darkslateblue;
+    background-color: whitesmoke;
+}
+
+.calculator__key {
+    width: 50%;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    text-transform: uppercase;
+}
+
+.calculator__key--equal {
+    width: 98px;
+}
+
+.button_eq:hover {
+    background-color: bisque;
+    font-weight: 700;
+}
+
+.calculator__key::-moz-focus-inner {
+    border: none
+}
